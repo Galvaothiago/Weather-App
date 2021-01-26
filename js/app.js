@@ -26,7 +26,6 @@ const getWeatherInfo = async inputValue => {
 
     const lastUpdateGetWeatherHours = LocalObservationDateTime.split('T')[1].split('-')[0]
 
-    console.log(lastUpdateGetWeatherHours)
     cityNameContainer.textContent = `${ LocalizedName.toUpperCase() }, ${ AdministrativeArea.LocalizedName.toUpperCase() }`
     weatherTextContainer.textContent = WeatherText
     temperatureContainer.textContent = Temperature.Metric.Value
