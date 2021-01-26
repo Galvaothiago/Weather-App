@@ -66,5 +66,3 @@ form.addEventListener('submit', e => {
 if (city) {
     getWeatherInfo(city)
 }
-
-console.log('oi')
