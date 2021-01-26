@@ -37,12 +37,12 @@ const getWeatherInfo = async inputValue => {
 }
 
 
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
 
-    if (!city) {
-        getWeatherInfo('Vinhedo')
-    }
-})
+//     if (!city) {
+//         getWeatherInfo('Vinhedo')
+//     }
+// })
 
 showInput.addEventListener('click', () => {
     input.classList.remove('d-none')
