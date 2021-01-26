@@ -13,6 +13,7 @@ const city = localStorage.getItem('city')
 
 const changeBackgroundWeather = isDay => {
     if (isDay) {
+
         return backgroudIsDay.style.backgroundImage = "url(./src/day.png)" 
     }
     backgroudIsDay.style.backgroundImage = "url(./src/night3.jpg)"
@@ -25,6 +26,7 @@ const getWeatherInfo = async inputValue => {
 
     const lastUpdateGetWeatherHours = LocalObservationDateTime.split('T')[1].split('-')[0]
 
+    console.log(lastUpdateGetWeatherHours)
     cityNameContainer.textContent = `${ LocalizedName.toUpperCase() }, ${ AdministrativeArea.LocalizedName.toUpperCase() }`
     weatherTextContainer.textContent = WeatherText
     temperatureContainer.textContent = Temperature.Metric.Value
@@ -66,4 +68,4 @@ if (city) {
     getWeatherInfo(city)
 }
 
-// console.log(getWeatherInfo)
+console.log('oi')
